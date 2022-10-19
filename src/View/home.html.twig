@@ -2,14 +2,16 @@
 {% extends 'layout.html.twig' %}
 {% block title %}
 	{{ parent() }}
-	- Accueil
+	- Déails
 {% endblock %}
 
 {% block content %}
 	{% block body %}
+		{% include '_navbar.html.twig' %}
 		<h1>
 			coucou
 		</h1>
-		{% include '_navbar.html.twig' %}
+
+		{% include '_footer.html.twig' %}
 	{% endblock %}
 {% endblock %}
