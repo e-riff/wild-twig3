@@ -10,11 +10,11 @@
 		<h1>
 			Liste des produits :
 		</h1>
-		<lu>
+		<ul>
 			{% for product in products %}
 				<li>{{product}}</li>
 			{% endfor %}
-		</lu>
+		</ul>
 		<pre>
     {{ dump(products) }}
 </pre>
