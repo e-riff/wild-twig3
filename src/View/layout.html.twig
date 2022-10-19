@@ -7,16 +7,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>
-			{% block title %}Twig represent
-			{% endblock %}
+			{% block title %}Twig represent{% endblock %}
 		</title>
 
 		<link rel="stylesheet" href="/assets/css/style.css">
 		<link rel="icon" href="/assets/images/favicon.png">
 	</head>
-
 	<body>
+
 		{% block content %}{% endblock %}
-		{% block footer %}{% endblock %}
+		<footer>{% block footer %}{% endblock %}</footer>
 	</body>
 </html>

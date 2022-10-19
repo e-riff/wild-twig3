@@ -1,8 +1,14 @@
 <nav class="navBar">
+<div>
+		<a href="products.php">Viens voir mes beaux produits<a>
+		<a href="details.php">Viens les voir en détail !<a>
+		<a href="home.php">Rentre à la maison<a>
+<div>
 	<span>
-		Produits en ventes :
+		{% if products != NULL %}		Produits en ventes :
+
 		{%for product in products%}
-			<span>{{product}}
-				||</span>
+			<span>{{product}}||</span>
 			{%endfor%}
+			{% endif %}
 		</navclass="navBar">
